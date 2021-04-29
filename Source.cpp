@@ -77,6 +77,7 @@ int main()
 		pop ecx
 		jz skip
 		dec eax
+		dec ecx
 		jmp f1
 		skip:
 		dec eax
@@ -88,7 +89,6 @@ int main()
 		end1:
 		mov ecx, 0
 		end2:
-		dec ecx
 		push ecx
 		lea ecx, fd
 		push ecx
