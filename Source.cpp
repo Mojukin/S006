@@ -87,7 +87,7 @@ int main()
 		jmp f1
 
 		end1:
-		mov ecx, 0
+		mov ecx, -1
 		end2:
 		push ecx
 		lea ecx, fd
