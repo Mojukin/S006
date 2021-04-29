@@ -55,10 +55,10 @@ int main()
 		dec ebx
 
 		f1:
-		cmp ecx, 0
-		jz end1
 		cmp edx, 0
 		jz end2
+		cmp ecx, 0
+		jz end1
 		push ecx
 		mov ch, [eax]
 		mov cl, [ebx]
