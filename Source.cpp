@@ -70,6 +70,13 @@ int main()
 		add ebx, edx
 		push edx
 		dec ebx
+		push ecx
+		mov ch, [eax]
+		mov cl, [ebx]
+		cmp ch, cl
+		pop ecx
+		jz skip
+		dec eax
 		jmp f1
 		skip:
 		dec eax
@@ -88,5 +95,4 @@ int main()
 		add esp, 12
 
 	}
-
 }
