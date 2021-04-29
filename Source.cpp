@@ -54,7 +54,7 @@ int main()
 		dec eax
 		dec ebx
 
-		f1:
+		f1:		
 		cmp edx, 0
 		jz end2
 		cmp ecx, 0
@@ -69,7 +69,8 @@ int main()
 		lea ebx, s1
 		add ebx, edx
 		push edx
-		inc edx
+		dec ebx
+		jmp f1
 		skip:
 		dec eax
 		dec ebx
